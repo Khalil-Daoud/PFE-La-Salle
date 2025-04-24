@@ -1,0 +1,280 @@
+[{
+  "_id": {
+    "$oid": "68054efe642e5e4921ccf665"
+  },
+  "name": "Casque sans fil haut de gamme",
+  "description": "Profitez d'une qualité sonore exceptionnelle avec ce casque antibruit haut de gamme. Idéal pour les mélomanes et les audiophiles.",
+  "price": 299.99,
+  "category": "audio",
+  "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  "rating": 4.5,
+  "numReviews": 120,
+  "countInStock": 25,
+  "createdAt": "2025-04-20T00:00:00Z",
+  "productId": {
+    "$numberLong": "1"
+  },
+  "id": {
+    "$numberLong": "1"
+  }
+},
+{
+  "_id": {
+    "$oid": "68054efe642e5e4921ccf666"
+  },
+  "name": "Montre connectée série 5",
+  "description": "Restez connecté et suivez votre forme physique avec cette montre connectée élégante. Elle comprend un moniteur de fréquence cardiaque, un GPS et bien plus encore.",
+  "price": 399.99,
+  "category": "objets portables",
+  "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  "rating": 4.2,
+  "numReviews": 89,
+  "countInStock": 30,
+  "createdAt": "2025-04-20T00:00:00Z",
+  "productId": {
+    "$numberLong": "2"
+  },
+  "id": {
+    "$numberLong": "2"
+  },
+  "featured": true
+},
+{
+  "_id": {
+    "$oid": "68054efe642e5e4921ccf667"
+  },
+  "name": "Kit appareil photo professionnel",
+  "description": "Prenez des photos et des vidéos époustouflantes avec cet appareil photo professionnel. Plusieurs objectifs et accessoires inclus.",
+  "price": 1299.99,
+  "category": "cameras",
+  "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  "rating": 4.7,
+  "numReviews": 60,
+  "countInStock": 12,
+  "createdAt": "2025-04-20T00:00:00Z",
+  "id": {
+    "$numberLong": "3"
+  },
+  "productId": {
+    "$numberLong": "3"
+  },
+  "featured": true
+},
+{
+  "_id": {
+    "$oid": "68054efe642e5e4921ccf668"
+  },
+  "name": "Ordinateur portable ultra-mince Pro",
+  "description": "Ordinateur portable puissant et léger, idéal pour les professionnels. Doté d'un superbe écran et d'une autonomie d'une journée.",
+  "price": 1499.99,
+  "category": "ordinateur",
+  "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  "rating": 4.8,
+  "numReviews": 42,
+  "countInStock": 18,
+  "createdAt": "2025-04-20T00:00:00Z",
+  "productId": {
+    "$numberLong": "4"
+  },
+  "id": {
+    "$numberLong": "4"
+  }
+},
+{
+  "_id": {
+    "$oid": "68054efe642e5e4921ccf669"
+  },
+  "name": "Écouteurs sans fil",
+  "description": "Écouteurs véritablement sans fil offrant une qualité sonore et un confort exceptionnels. Parfaits pour les entraînements et un usage quotidien.",
+  "price": 159.99,
+  "category": "audio",
+  "image": "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  "rating": 4.1,
+  "numReviews": 95,
+  "countInStock": 50,
+  "createdAt": "2025-04-20T00:00:00Z",
+  "productId": {
+    "$numberLong": "5"
+  },
+  "id": "5"
+},
+{
+  "_id": {
+    "$oid": "68054efe642e5e4921ccf66a"
+  },
+  "name": "Gaming Console XS",
+  "description": "Console de jeu nouvelle génération avec des graphismes époustouflants et une vaste bibliothèque de jeux. Une manette incluse.",
+  "price": 499.99,
+  "category": "gaming",
+  "image": "https://images.unsplash.com/photo-1592840496694-26d035b52b48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  "rating": 4.6,
+  "numReviews": 110,
+  "countInStock": 20,
+  "createdAt": "2025-04-20T00:00:00Z",
+  "productId": {
+    "$numberLong": "6"
+  },
+  "id": {
+    "$numberLong": "6"
+  }
+},
+{
+  "_id": {
+    "$oid": "68054efe642e5e4921ccf66b"
+  },
+  "name": "4K Smart TV",
+  "description": "Plongez dans une résolution 4K époustouflante. Ce téléviseur intelligent est doté de commandes vocales et donne accès à tous vos services de streaming préférés.",
+  "price": 899.99,
+  "category": "tvs",
+  "image": "https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  "rating": 4.3,
+  "numReviews": 78,
+  "countInStock": 15,
+  "createdAt": "2025-04-20T00:00:00Z",
+  "productId": {
+    "$numberLong": "7"
+  },
+  "id": {
+    "$numberLong": "7"
+  }
+},
+{
+  "_id": {
+    "$oid": "68054efe642e5e4921ccf66c"
+  },
+  "name": "Tablet Pro 12.9\"",
+  "description": "L'expérience tablette ultime pour les créatifs et les professionnels. Dotée d'un écran époustouflant et d'un processeur puissant.",
+  "price": 999.99,
+  "category": "tablets",
+  "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  "rating": 4.4,
+  "numReviews": 34,
+  "countInStock": 22,
+  "createdAt": "2025-04-20T00:00:00Z",
+  "productId": {
+    "$numberLong": "8"
+  },
+  "id": {
+    "$numberLong": "8"
+  }
+},
+{
+  "_id": {
+    "$oid": "6805549c642e5e4921ccf671"
+  },
+  "name": "Ooredoo 4G+ Home Box",
+  "description": "Profitez d'une connexion Internet illimitée à haute vitesse avec la Home Box 4G+ de Ooredoo. Idéale pour toute la famille.",
+  "price": 59.99,
+  "category": "internet",
+  "image": "https://www.ooredoo.tn/Business/5843-large_default/4g-box.jpg",
+  "rating": 4.2,
+  "numReviews": 47,
+  "countInStock": 100,
+  "createdAt": "2025-04-20T00:00:00Z",
+  "productId": {
+    "$numberLong": "9"
+  },
+  "id": {
+    "$numberLong": "9"
+  }
+},
+{
+  "_id": {
+    "$oid": "6807ff909b3b78ee7c3a5efa"
+  },
+  "name": "Ooredoo FIXE JDID 5G",
+  "description": "Profitez d'une connexion Internet illimitée à haute vitesse avec la Home Box 5G de Ooredoo. Idéale pour toute la famille.",
+  "price": 59.99,
+  "category": "internet",
+  "image": "https://www.ooredoo.tn/Personal/img/cms/VAS/la%20Liga/1200x1200-Fixe-JDID-5G.png",
+  "rating": 4.2,
+  "numReviews": 47,
+  "countInStock": 100,
+  "createdAt": "2025-04-20T00:00:00Z",
+  "id": {
+    "$numberLong": "10"
+  },
+  "productId": {
+    "$numberLong": "10"
+  }
+},
+{
+  "_id": {
+    "$oid": "68091a32ca537603f49eb236"
+  },
+  "name": "Ooredoo FIXE JDID 6G",
+  "description": "Profitez d'une connexion Internet illimitée à haute vitesse avec la Home Box 5G de Ooredoo. Idéale pour toute la famille.",
+  "price": 70,
+  "category": "internet",
+  "image": "https://www.ooredoo.tn/Personal/img/cms/VAS/la%20Liga/1200x1200-Fixe-JDID-5G.png",
+  "rating": 4.2,
+  "numReviews": 47,
+  "countInStock": 100,
+  "createdAt": "2025-04-20T00:00:00Z",
+  "id": {
+    "$numberLong": "11"
+  },
+  "productId": {
+    "$numberLong": "11"
+  }
+},
+{
+  "_id": {
+    "$oid": "68091a32ca537603f49eb237"
+  },
+  "name": "Samsung Galaxy S23 Ultra",
+  "description": "Le Samsung Galaxy S23 Ultra allie performance extrême, appareil photo de 200 MP et S Pen intégré pour une productivité accrue.",
+  "price": 4200,
+  "category": "smartphone",
+  "image": "https://www.samsungtunisie.tn/11155-home_default/samsung-galaxy-s23-ultra-prix-tunisie.jpg",
+  "rating": 4.8,
+  "numReviews": 128,
+  "countInStock": 30,
+  "createdAt": "2025-04-24T00:00:00Z",
+  "id": {
+    "$numberLong": "12"
+  },
+  "productId": {
+    "$numberLong": "12"
+  }
+},
+{
+  "_id": {
+    "$oid": "68091a32ca537603f49eb238"
+  },
+  "name": "Redmi Note 13 Pro+ 5G",
+  "description": "Le Redmi Note 13 Pro+ 5G est un smartphone puissant avec un écran AMOLED 120Hz, une batterie longue durée et un appareil photo de 200 MP.",
+  "price": 1600,
+  "category": "smartphone",
+  "image": "https://www.xiaomistore.tn/wp-content/webp-express/webp-images/uploads/2024/01/Redmi-Note-13-Pro-Plus-5G-purple.png.webp",
+  "rating": 4.5,
+  "numReviews": 89,
+  "countInStock": 45,
+  "createdAt": "2025-04-24T00:00:00Z",
+  "id": {
+    "$numberLong": "13"
+  },
+  "productId": {
+    "$numberLong": "13"
+  }
+},
+{
+  "_id": {
+    "$oid": "68091a32ca537603f49eb239"
+  },
+  "name": "iPhone 15 Pro Max",
+  "description": "L’iPhone 15 Pro Max, avec sa puce A17 Pro, son châssis en titane et ses fonctionnalités photo avancées, offre une expérience haut de gamme.",
+  "price": 5900,
+  "category": "smartphone",
+  "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309?wid=5120&hei=2880&fmt=jpeg&qlt=80&.v=1692904322634",
+  "rating": 4.9,
+  "numReviews": 213,
+  "countInStock": 20,
+  "createdAt": "2025-04-24T00:00:00Z",
+  "id": {
+    "$numberLong": "14"
+  },
+  "productId": {
+    "$numberLong": "14"
+  }
+}]

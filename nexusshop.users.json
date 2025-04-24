@@ -1,0 +1,23 @@
+[{
+  "_id": {
+    "$oid": "68054b72d7f8ffcc41c895cc"
+  },
+  "name": "Khalil",
+  "email": "khalil-daoud@hotmail.fr",
+  "password": "$2b$10$nJPJS97EqMXflTHgSMLER.k2nDh2995HaUgQ2k3TYYGwiDtrJ1lsO",
+  "createdAt": {
+    "$date": "2025-04-20T19:30:58.687Z"
+  },
+  "__v": 0,
+  "userId": "1"
+},
+{
+  "_id": {
+    "$oid": "68091909f85e915ea869be49"
+  },
+  "name": "Majdi",
+  "email": "Majdi@hotmail.fr",
+  "password": "$2b$10$IgDZ4mioiSw1S2E4nTIr6eyoE26zUb8MfGE12YXOl1U8u1J3PLzLO",
+  "__v": 0,
+  "userId": "2"
+}]

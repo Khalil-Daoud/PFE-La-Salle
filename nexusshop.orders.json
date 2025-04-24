@@ -1,0 +1,240 @@
+[{
+  "_id": {
+    "$oid": "680592db6acdc8e3b61078e0"
+  },
+  "user": {
+    "$oid": "68054b72d7f8ffcc41c895cc"
+  },
+  "items": [
+    {
+      "productId": {
+        "$oid": "68054efe642e5e4921ccf665"
+      },
+      "name": "Premium Wireless Headphones",
+      "quantity": 1,
+      "price": 250,
+      "_id": {
+        "$oid": "680592db6acdc8e3b61078e1"
+      }
+    }
+  ],
+  "shippingAddress": {
+    "address": "dfdsgfdgd",
+    "city": "fdgfdgfd",
+    "postalCode": "dfgfdgdf",
+    "country": "Tunisgfdgfdg"
+  },
+  "paymentMethod": "Credit Card",
+  "subtotal": 250,
+  "shippingPrice": 0,
+  "tax": 37.5,
+  "total": 287.5,
+  "isPaid": false,
+  "createdAt": {
+    "$date": "2025-04-21T00:35:39.619Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T00:35:39.619Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680596e06acdc8e3b6107902"
+  },
+  "user": {
+    "$oid": "68054b72d7f8ffcc41c895cc"
+  },
+  "items": [
+    {
+      "productId": {
+        "$oid": "68054efe642e5e4921ccf66a"
+      },
+      "name": "Gaming Console XS",
+      "quantity": 1,
+      "price": 499.99,
+      "_id": {
+        "$oid": "680596e06acdc8e3b6107903"
+      }
+    }
+  ],
+  "shippingAddress": {
+    "address": "dqsdsqdsq",
+    "city": "dqsdsqd",
+    "postalCode": "dsqdsqdq",
+    "country": "Tunis"
+  },
+  "paymentMethod": "Credit Card",
+  "subtotal": 499.99,
+  "shippingPrice": 0,
+  "tax": 75,
+  "total": 574.99,
+  "isPaid": false,
+  "createdAt": {
+    "$date": "2025-04-21T00:52:48.850Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T00:52:48.850Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680597206acdc8e3b610790b"
+  },
+  "user": {
+    "$oid": "68054b72d7f8ffcc41c895cc"
+  },
+  "items": [
+    {
+      "productId": {
+        "$oid": "68054efe642e5e4921ccf668"
+      },
+      "name": "Ultra-Thin Laptop Pro",
+      "quantity": 1,
+      "price": 1499.99,
+      "_id": {
+        "$oid": "680597206acdc8e3b610790c"
+      }
+    }
+  ],
+  "shippingAddress": {
+    "address": "gfdgdgdf",
+    "city": "gffdgdf",
+    "postalCode": "fgdgfd",
+    "country": "Tunisdfgfdgfd"
+  },
+  "paymentMethod": "Credit Card",
+  "subtotal": 1499.99,
+  "shippingPrice": 0,
+  "tax": 225,
+  "total": 1724.99,
+  "isPaid": false,
+  "createdAt": {
+    "$date": "2025-04-21T00:53:52.713Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T00:53:52.713Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68059975c638c6f16d22f78c"
+  },
+  "user": {
+    "$oid": "68054b72d7f8ffcc41c895cc"
+  },
+  "items": [
+    {
+      "productId": {
+        "$oid": "68054efe642e5e4921ccf665"
+      },
+      "name": "Premium Wireless Headphones",
+      "quantity": 1,
+      "price": 250,
+      "_id": {
+        "$oid": "68059975c638c6f16d22f78d"
+      }
+    }
+  ],
+  "shippingAddress": {
+    "address": "sqddqssq",
+    "city": "dsqdq",
+    "postalCode": "sqdsqd",
+    "country": "Tunissqdsq"
+  },
+  "paymentMethod": "Credit Card",
+  "subtotal": 250,
+  "shippingPrice": 0,
+  "tax": 37.5,
+  "total": 287.5,
+  "isPaid": false,
+  "createdAt": {
+    "$date": "2025-04-21T01:03:49.048Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-21T01:03:49.048Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "680966ac23afe08753bbcc71"
+  },
+  "user": {
+    "$oid": "68054b72d7f8ffcc41c895cc"
+  },
+  "items": [
+    {
+      "productId": {
+        "$oid": "68054efe642e5e4921ccf665"
+      },
+      "name": "Casque sans fil haut de gamme",
+      "quantity": 1,
+      "price": 299.99,
+      "_id": {
+        "$oid": "680966ac23afe08753bbcc72"
+      }
+    }
+  ],
+  "shippingAddress": {
+    "address": "sdsdsds",
+    "city": "sdsdsd",
+    "postalCode": "sddssdsd",
+    "country": "Tunis"
+  },
+  "paymentMethod": "Carte de crédit",
+  "subtotal": 299.99,
+  "shippingPrice": 0,
+  "tax": 45,
+  "total": 344.99,
+  "isPaid": false,
+  "createdAt": {
+    "$date": "2025-04-23T22:16:12.974Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-23T22:16:12.974Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68096ca0fec1d0985e26d92b"
+  },
+  "user": {
+    "$oid": "68054b72d7f8ffcc41c895cc"
+  },
+  "items": [
+    {
+      "productId": {
+        "$oid": "68054efe642e5e4921ccf66a"
+      },
+      "name": "Gaming Console XS",
+      "quantity": 1,
+      "price": 499.99,
+      "_id": {
+        "$oid": "68096ca0fec1d0985e26d92c"
+      }
+    }
+  ],
+  "shippingAddress": {
+    "address": "eeeee",
+    "city": "eeeee",
+    "postalCode": "eeeeee",
+    "country": "Tunis"
+  },
+  "paymentMethod": "PayPal",
+  "subtotal": 499.99,
+  "shippingPrice": 0,
+  "tax": 75,
+  "total": 574.99,
+  "isPaid": false,
+  "createdAt": {
+    "$date": "2025-04-23T22:41:36.679Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-23T22:41:36.679Z"
+  },
+  "__v": 0
+}]

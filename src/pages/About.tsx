@@ -132,7 +132,7 @@ const About = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Notre parcours</h2>
             <div className="max-w-3xl mx-auto space-y-8">
               {[
-                { year: "2015", title: "Fondation à San Francisco", description: "Ooredoo El Hamma est né avec une vision de transformation du commerce technologique." },
+                { year: "2015", title: "Fondation à El Hamma", description: "Ooredoo El Hamma est né avec une vision de transformation du commerce technologique." },
                 { year: "2017", title: "Diversification des produits", description: "Ajout de l’audio haut de gamme et des technologies portables." },
                 { year: "2019", title: "Expansion internationale", description: "Ouverture des bureaux en Europe et en Asie." },
                 { year: "2021", title: "Initiative écologique", description: "Lancement d’emballages éco-responsables et de livraisons neutres en carbone." },

@@ -138,6 +138,15 @@ export const products: Product[] = [
     image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309?wid=5120&hei=2880&fmt=jpeg&qlt=80&.v=1692904322634",
     category: "smartphone",
     featured: false
+  },
+    {
+    id: "15",
+    name: "iPhone 15 Pro Max",
+    description: "L’iPhone 15 Pro Max, avec sa puce A17 Pro, son châssis en titane et ses fonctionnalités photo avancées, offre une expérience haut de gamme.",
+    price: 5900,
+    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-model-unselect-gallery-1-202309?wid=5120&hei=2880&fmt=jpeg&qlt=80&.v=1692904322634",
+    category: "smartphone",
+    featured: false
   }
 
 

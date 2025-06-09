@@ -1,13 +1,14 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
+const { isAborted } = require("zod");
 
 const router = express.Router();
 
 const authenticateToken = (req, res, next) => {
   const authHeader = req.headers["authorization"];
   const token = authHeader && authHeader.split(" ")[1];
-  console.log("Received token (auth):", token); 
+  console.log("Received token (auth):", token);
   if (!token) {
     console.log("No token provided (auth)");
     return res.status(401).json({ message: "Authentication required" });
@@ -74,6 +75,7 @@ router.post("/login", async (req, res) => {
         name: user.name,
         email: user.email,
         userId: user.userId,
+        isAdmin: user.isAdmin, 
       },
     });
   } catch (error) {

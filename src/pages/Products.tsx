@@ -99,8 +99,7 @@ const Products = () => {
   const resetFilters = () => {
     setSelectedCategory(null);
     setPriceRange([0, 1500]);
-    setSortOption("featured");
-    navigate("?");
+    navigate("?"); // Supprime tous les query params
   };
 
   return (

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import { ENDPOINTS } from "../api/config";
 import { format, parseISO } from "date-fns";
+import { ChevronRight } from "lucide-react";
 
 interface Order {
   _id: string;
@@ -77,7 +78,6 @@ const OrdersPage: React.FC = () => {
       const token = localStorage.getItem("token");
       if (!token) throw new Error("Authentication required");
 
-      // Use ENDPOINTS.ORDERS.DELETE to construct the correct URL
       const response = await fetch(ENDPOINTS.ORDERS.DELETE(orderId), {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
@@ -88,7 +88,6 @@ const OrdersPage: React.FC = () => {
         throw new Error(errorData.message || "Failed to delete order");
       }
 
-      // Refetch orders
       const fetchResponse = await fetch(ENDPOINTS.ORDERS.GET_ALL, {
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -104,10 +103,22 @@ const OrdersPage: React.FC = () => {
   };
 
   return (
-    <div className="p-6 max-w-7xl mx-auto mt-[100px]">
+    <div className="p-6 max-w-7xl mx-auto mt-[50px] bg-white rounded-lg shadow border border-gray-100">
+      <div className="mb-8">
+        <nav className="flex items-center text-sm space-x-1">
+          <Link to="/" className="text-muted-foreground hover:text-red-600">
+            Accueil
+          </Link>
+          <ChevronRight size={16} className="text-muted-foreground" />
+          <span className="text-foreground font-medium">
+            Gestion des Commandes
+          </span>
+        </nav>
+      </div>
+
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
         <h2 className="text-3xl font-bold text-gray-800">
-          Historique des orders
+          Historique des Commandes
         </h2>
         <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
           <input
@@ -198,7 +209,7 @@ const OrdersPage: React.FC = () => {
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-right text-sm">
                       <button
-                        onClick={() => navigate(`/order/${order._id}`)}
+                        onClick={() => navigate(`/admin/order/${order._id}`)}
                         className="text-blue-600 hover:text-blue-900 font-medium transition-colors mr-4"
                       >
                         Voir Détails →
@@ -215,6 +226,43 @@ const OrdersPage: React.FC = () => {
               </tbody>
             </table>
           </div>
+        </div>
+      )}
+
+      {/* Tableau récapitulatif */}
+      {!loading && filteredOrders.length > 0 && (
+        <div className="mt-6 p-4 bg-gray-50 rounded-lg shadow-inner border">
+          <h3 className="text-lg font-semibold mb-4">Récapitulatif</h3>
+          <table className="w-full text-sm text-gray-700">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="px-4 py-2 text-left">Type</th>
+                <th className="px-4 py-2 text-right">Total (DT)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="px-4 py-2">Total Payé</td>
+                <td className="px-4 py-2 text-right font-semibold text-green-600">
+                  {filteredOrders
+                    .filter((order) => order.isPaid)
+                    .reduce((acc, order) => acc + order.total, 0)
+                    .toFixed(2)}{" "}
+                  DT
+                </td>
+              </tr>
+              <tr>
+                <td className="px-4 py-2">Total Impayé</td>
+                <td className="px-4 py-2 text-right font-semibold text-red-600">
+                  {filteredOrders
+                    .filter((order) => !order.isPaid)
+                    .reduce((acc, order) => acc + order.total, 0)
+                    .toFixed(2)}{" "}
+                  DT
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       )}
     </div>

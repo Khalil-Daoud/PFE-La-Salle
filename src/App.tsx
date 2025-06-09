@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -19,7 +18,11 @@ import Orders from "./pages/Orders";
 import OrderDetails from "./pages/OrderDetails";
 import { CartProvider } from "./context/CartContext";
 import { CheckoutProvider } from "./context/CheckoutContext";
-
+import AddProduct from "./pages/AddProduct";
+import AdminProductList from "./pages/AdminProductList";
+import AdminPanel from "./pages/AdminPannel";
+import MineOrder from "./pages/MineOrder";
+import ContactList from "./pages/ContactList";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -31,6 +34,7 @@ const App = () => (
             <Toaster />
             <Sonner />
             <Routes>
+              {/* Routes principales pour la partie publique */}
               <Route element={<MainLayout />}>
                 <Route path="/" element={<Index />} />
                 <Route path="/products" element={<Products />} />
@@ -39,11 +43,27 @@ const App = () => (
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/checkout" element={<Checkout />} />
                 <Route path="/profile" element={<Profile />} />
-                <Route path="/orders" element={<Orders />} />
-                <Route path="/order/:id" element={<OrderDetails />} />
+                <Route path="order/:id" element={<OrderDetails />} />
+                <Route path="/commandes" element={<MineOrder />} />
+                <Route path="/addproduct" element={<AddProduct />} />{" "}
+                {/* publique ? sinon à déplacer */}
               </Route>
+
+              {/* Authentification */}
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<SignUp />} />
+
+              {/* Espace d’administration (routage imbriqué) */}
+              <Route path="/admin" element={<AdminPanel />}>
+                <Route path="products" element={<AdminProductList />} />
+                <Route path="addproduct" element={<AddProduct />} />
+                <Route path="products/add/:id" element={<AddProduct />} />
+                <Route path="orders" element={<Orders />} />
+                <Route path="order/:id" element={<OrderDetails />} />
+                <Route path="message" element={<ContactList />} />
+              </Route>
+
+              {/* 404 */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </CheckoutProvider>

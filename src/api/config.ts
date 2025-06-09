@@ -12,16 +12,35 @@ export const ENDPOINTS = {
   PRODUCTS: {
     GET_ALL: `${API_URL}/products`,
     GET_ONE: (id: string) => `${API_URL}/products/${id}`,
-    INIT: `${API_URL}/products/init`
+    INIT: `${API_URL}/products/init`,
+    CREATE: `${API_URL}/products/create`, // Fixed typo
+    UPDATE: (id: string) => `${API_URL}/products/${id}`,
+    DELETE: (id: string) => `${API_URL}/products/${id}`,
+    GET_ONE_DATA: (id: string) => `${API_URL}/products/data/${id}`
+
+
   },
   ORDERS: {
-    GET_ALL: "http://localhost:5000/api/orders/all", // Updated from "/api/orders" to "/api/orders/all"
+    GET_ALL: `${API_URL}/orders/all`, // Updated from "/api/orders" to "/api/orders/all"
     CREATE: `${API_URL}/orders`,
     GET_ONE: (id: string) => `${API_URL}/orders/${id}`,
     UPDATE_TO_PAID: (id: string) => `${API_URL}/orders/${id}/pay`,
     DELETE: (id: string) => `${API_URL}/orders/${id}`, // Add this line
 
-  }
+  },
+
+  DATA: {
+    GET_ONE: (id: string) => `${API_URL}/data/${id}`,
+    GET_ALL: `${API_URL}/data`,
+    CREATE: `${API_URL}/data`,
+    UPDATE: (id: string) => `${API_URL}/data/${id}`,
+  },
+
+  CONTACT: {
+    CREATE: `${API_URL}/contact`,
+     GET_ALL: `${API_URL}/contact`,
+
+  },
 
 
 

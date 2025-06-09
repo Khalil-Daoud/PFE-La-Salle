@@ -1,33 +1,45 @@
-
-import React from 'react';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from 'react-hook-form';
-import { z } from 'zod';
-import { Button } from '@/components/ui/button';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { useCheckout } from '../../context/CheckoutContext';
+import React from "react";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { useCheckout } from "../../context/CheckoutContext";
 
 const shippingSchema = z.object({
-  address: z.string().min(5, { message: 'Address must be at least 5 characters' }),
-  city: z.string().min(2, { message: 'City must be at least 2 characters' }),
-  postalCode: z.string().min(3, { message: 'Postal code must be at least 3 characters' }),
-  country: z.string().min(2, { message: 'Country must be at least 2 characters' }),
+  address: z
+    .string()
+    .min(5, { message: "Address must be at least 5 characters" }),
+  city: z.string().min(2, { message: "City must be at least 2 characters" }),
+  postalCode: z
+    .string()
+    .min(3, { message: "Postal code must be at least 3 characters" }),
+  country: z
+    .string()
+    .min(2, { message: "Country must be at least 2 characters" }),
 });
 
 type ShippingFormData = z.infer<typeof shippingSchema>;
 
 const ShippingStep: React.FC = () => {
   const { checkoutState, saveShippingAddress, saveUserInfo } = useCheckout();
-  
+
   // Get user data from localStorage
   const getUserFromStorage = () => {
-    const userData = localStorage.getItem('user');
+    const userData = localStorage.getItem("user");
     if (userData) {
       try {
         return JSON.parse(userData);
       } catch (error) {
-        console.error('Failed to parse user data', error);
+        console.error("Failed to parse user data", error);
       }
     }
     return null;
@@ -39,7 +51,8 @@ const ShippingStep: React.FC = () => {
       saveUserInfo({
         name: user.name,
         email: user.email,
-        userId: user._id
+        userId: user._id,
+        isAdmin: user.isAdmin || false,
       });
     }
   }, [saveUserInfo]);
@@ -47,10 +60,10 @@ const ShippingStep: React.FC = () => {
   const form = useForm<ShippingFormData>({
     resolver: zodResolver(shippingSchema),
     defaultValues: {
-      address: checkoutState.shippingAddress.address || '',
-      city: checkoutState.shippingAddress.city || '',
-      postalCode: checkoutState.shippingAddress.postalCode || '',
-      country: checkoutState.shippingAddress.country || 'Tunis',
+      address: checkoutState.shippingAddress.address || "",
+      city: checkoutState.shippingAddress.city || "",
+      postalCode: checkoutState.shippingAddress.postalCode || "",
+      country: checkoutState.shippingAddress.country || "Tunis",
     },
   });
 
@@ -60,19 +73,23 @@ const ShippingStep: React.FC = () => {
       address: data.address,
       city: data.city,
       postalCode: data.postalCode,
-      country: data.country
+      country: data.country,
     };
-    
+
     saveShippingAddress(shippingData);
   };
 
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-2xl font-semibold mb-1">Informations de livraison</h2>
-        <p className="text-muted-foreground">Où devons-nous envoyer votre commande&nbsp;?</p>
+        <h2 className="text-2xl font-semibold mb-1">
+          Informations de livraison
+        </h2>
+        <p className="text-muted-foreground">
+          Où devons-nous envoyer votre commande&nbsp;?
+        </p>
       </div>
-  
+
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <FormField
@@ -88,7 +105,7 @@ const ShippingStep: React.FC = () => {
               </FormItem>
             )}
           />
-  
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <FormField
               control={form.control}
@@ -103,7 +120,7 @@ const ShippingStep: React.FC = () => {
                 </FormItem>
               )}
             />
-  
+
             <FormField
               control={form.control}
               name="postalCode"
@@ -118,7 +135,7 @@ const ShippingStep: React.FC = () => {
               )}
             />
           </div>
-  
+
           <FormField
             control={form.control}
             name="country"
@@ -132,7 +149,7 @@ const ShippingStep: React.FC = () => {
               </FormItem>
             )}
           />
-  
+
           <div className="flex justify-end">
             <Button type="submit" className="rounded-full" size="lg">
               Continuer vers le paiement
@@ -142,7 +159,6 @@ const ShippingStep: React.FC = () => {
       </Form>
     </div>
   );
-  
 };
 
 export default ShippingStep;

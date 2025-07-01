@@ -9,6 +9,7 @@ const dataRoutes = require("./routes/data"); // Ensure this route is defined
 const contactRoutes = require("./routes/contact"); // Ensure this route is defined
 const app = express();
 const PORT = process.env.PORT || 5000;
+const usersRoutes = require("./routes/users");
 
 // Middleware
 app.use(cors());
@@ -26,6 +27,7 @@ app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/data", dataRoutes);
 app.use("/api/contact", contactRoutes);
+app.use("/api/users", usersRoutes);
 // Basic route
 app.get("/", (req, res) => {
   res.send("Ooredoo API is running");

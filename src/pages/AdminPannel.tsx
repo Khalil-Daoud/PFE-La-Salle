@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
-import { Menu, LogOut, Package, ShoppingBag, MessageCircleDashed } from "lucide-react";
+import {
+  Menu,
+  LogOut,
+  Package,
+  ShoppingBag,
+  MessageCircleDashed,
+  Users,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
@@ -82,6 +89,15 @@ const AdminPanel: React.FC = () => {
             >
               <MessageCircleDashed className="mr-2 h-5 w-5" />
               Liste des Messages
+            </Link>
+
+            <Link
+              to="/admin/employees"
+              className="flex items-center px-4 py-2 text-gray-700 hover:bg-red-100"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              <Users  className="mr-2 h-5 w-5" />
+              Liste des Employees
             </Link>
           </nav>
           <div className="absolute bottom-4 w-full px-4">

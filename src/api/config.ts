@@ -38,9 +38,19 @@ export const ENDPOINTS = {
 
   CONTACT: {
     CREATE: `${API_URL}/contact`,
-     GET_ALL: `${API_URL}/contact`,
+    GET_ALL: `${API_URL}/contact`,
 
   },
+
+  EMPLOYEES: {
+    GET_ALL: `${API_URL}/users`,
+    CREATE: `${API_URL}/users`,
+    GET_ONE: (id) => `${API_URL}/users/${id}`,
+    UPDATE: (id) => `${API_URL}/users/${id}`,
+    DELETE: (id) => `${API_URL}/users/${id}`
+  }
+
+
 
 
 

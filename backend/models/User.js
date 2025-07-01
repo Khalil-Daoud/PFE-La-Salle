@@ -8,6 +8,21 @@ const userSchema = new mongoose.Schema(
     password: { type: String, required: true },
     userId: { type: String, required: true },
     isAdmin: { type: Boolean, default: false },
+    poste: {
+      type: String,
+      enum: [
+        "Manager",
+        "Vendeur",
+        "Technicien",
+        "Comptable",
+        "Assistant",
+        "Chef de Produit",
+        "Développeur Web",
+        "Analyste",
+        "Stock Manager",
+      ],
+      default: "Vendeur",
+    },
   },
   { timestamps: true }
 );

@@ -23,6 +23,9 @@ import AdminProductList from "./pages/AdminProductList";
 import AdminPanel from "./pages/AdminPannel";
 import MineOrder from "./pages/MineOrder";
 import ContactList from "./pages/ContactList";
+import EmployeesList from "./pages/Employeelist";
+import EmployeeEdit from "./pages/EmployeeEdit";
+import EmployeeAdd from "./pages/EmployeeAdd";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -61,6 +64,9 @@ const App = () => (
                 <Route path="orders" element={<Orders />} />
                 <Route path="order/:id" element={<OrderDetails />} />
                 <Route path="message" element={<ContactList />} />
+                <Route path="employees" element={<EmployeesList />} />
+                <Route path="employees/edit/:id" element={<EmployeeEdit />} />
+                <Route path="employees/add" element={<EmployeeAdd />} />
               </Route>
 
               {/* 404 */}
